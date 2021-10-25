@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; // decorador 
+// import { basename } from 'path';
+// import { basename } from 'path';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-root', // nombre componente 
+  templateUrl: './app.component.html', // render 
+  styleUrls: ['./app.component.css'] // estilos
 })
+
 export class AppComponent {
-  title = 'bases';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 }
